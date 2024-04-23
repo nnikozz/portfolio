@@ -380,7 +380,7 @@ nav ul li a.active{
 
 .inq{
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 form{
@@ -393,9 +393,25 @@ form{
     margin: 0 auto;
 }
 
-form label, form input, form textarea, form button {
-    font-family: 'Times New Roman', Times, serif;
+.map{
+    margin-top: 5px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #c40785, #23fae8);
+    border-image-slice: 1;
+}
+
+form label, form input, form textarea, form button{
+    font-family: system-ui, sans-serif;
+    font-weight: normal;
+    color: floralwhite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    letter-spacing: 1px;
     width: 300px;
+}
+
+#submit{
+    background-color: #000000;
 }
 
 .links{
