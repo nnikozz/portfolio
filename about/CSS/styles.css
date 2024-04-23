@@ -400,7 +400,7 @@ form{
     border-image-slice: 1;
 }
 
-form label, form input, form textarea, form button{
+form label, form button{
     font-family: system-ui, sans-serif;
     font-weight: normal;
     color: floralwhite;
@@ -408,6 +408,12 @@ form label, form input, form textarea, form button{
     text-align: center;
     letter-spacing: 1px;
     width: 300px;
+}
+
+form input, form textarea{
+    width: 300px;
+    font-family: system-ui, sans-serif;
+    font-weight: normal;
 }
 
 #submit{
