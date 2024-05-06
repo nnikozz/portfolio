@@ -199,6 +199,8 @@
         } else {
           content.classList.add('expanded');
           button.textContent = "SHOW LESS";
+
+          window.getComputedStyle(content).getPropertyValue('height');
         }
       }
 
