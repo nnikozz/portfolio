@@ -288,7 +288,7 @@ nav ul li a.active{
     text-align: left;
     overflow: hidden;
     transition: 0.3s ease;
-    max-height: 210px;
+    max-height: 240px;
 }
 
 .show-more-button{
