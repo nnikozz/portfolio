@@ -153,6 +153,11 @@
         }, 1000);
       }
 
+      if (location.pathname.endsWith('index.html')) {
+      var newPath = location.pathname.replace('index.html', '');
+      window.history.replaceState({}, document.title, newPath);
+      }
+
     </script>
 
   </body>
