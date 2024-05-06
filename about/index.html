@@ -247,6 +247,10 @@
         })
       .catch(error => console.error('Error fetching phone number:', error));
 
+      if (location.pathname.endsWith('index.html')) {
+      var newPath = location.pathname.replace('index.html', '');
+      window.history.replaceState({}, document.title, newPath);
+      }
 
     </script>
 
