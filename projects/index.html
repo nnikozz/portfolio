@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Projects</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Projects Page">
+    <meta name="author" content="Niko Hakala">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS,Portfolio,Niko Hakala">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/ico/favicon-16x16.png">
+    <link rel="manifest" href="../img/ico/site.webmanifest">
+
+  </head>
+
+  <body>
+
+      <header>
+        <nav>
+          <div class="logo-text">
+            <a href="#" onclick="openImage(this)">
+              <img src="../img/logo.jpg" alt="avatar image" class="logo">
+            </a>
+              <p class="menutext2">Niko Hakala</p>
+              <p class="menutext3">Niko H.</p>
+          </div>
+          <p class="menutext">Niko Hakala</p>
+          <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" 
+              height="20" viewBox="0 -960 960 960" width="20">
+              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"fill="#23fae8"/>
+            </svg></a></li>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../photography/index.html">PHOTOGRAPHY</a></li>
+            <li><a href="../3dmodels/index.html">3D MODELS</a></li>
+            <li><a href="#" class="active">PROJECTS</a></li>
+            <li><a href="../about/index.html">ABOUT</a></li>
+            <div class="glitch-container">
+              <img class="sidebaravatar" src="../img/logo.jpg" onclick="openImage(this)" alt="avatar image">
+            </div>
+          </ul>
+          <ul>
+            <li class="hideOnMobile"><a href="../index.html">HOME</a></li>
+            <li class="hideOnMobile"><a href="../photography/index.html">PHOTOGRAPHY</a></li>
+            <li class="hideOnMobile"><a href="../3dmodels/index.html">3D MODELS</a></li>
+            <li class="hideOnMobile"><a href="#" class="active">PROJECTS</a></li>
+            <li class="hideOnMobile"><a href="../about/index.html">ABOUT</a></li>
+            <li class="menubutton" onclick=showSidebar()><a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -1200 960 960" width="30" class="move">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"fill="#23fae8"/></svg></a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <div class="main">
+
+      <div class="container1">
+        <h1> 1/ Portfolio Website</h1>
+        <h2>HTML / CSS / JAVASCRIPT</h2>
+        <p class="tekstit" id="tekstitContent1">
+          - Portfolio website designed & made from scratch using HTML, CSS & JavaScript on Visual Studio Code. 
+          This project was completed as part of the final assignment for the "Website Basics" course. Through this assignment, I gained valuable insights into the website development process.
+          <br><br>- The plan was to create a modern looking website, responsive for both mobile & desktop use.
+          Starting off, I made the site foundation by creating a responsive navigation system & main div with styling.
+          <br><br>- Navigation system is handled with JavaScript for UI smoothing. 
+          Functions like showSidebar() and hideSidebar() control the sidebar's visibility and animations, while toggleMenuButton() enables easy toggling of the sidebar.
+          handleResize() ensures that navigation stays clean & doesn't break by adjusting elements based on window size changes.
+          <br><br>- At the home page, the "welcome" text is animated in CSS. Video background is recorded by me, blurred & looped.
+      </p>
+      <button class="show-more-button" onclick="toggleExpand('tekstitContent1')">SHOW MORE</button>
+        
+        <div class="image">
+          <img class="img" src="../img/projects/project1website.jpg" alt="project 1 image"> 
+        </div>
+        <div class="status">
+          <h3>PROJECT STATUS: <span class="wip"> COMPLETED</span><span class="updating">/UPDATING</span></h3>
+        </div>
+
+        <div class="issues">
+          <h4>Issues Detected/ Severity: <span class="low"> Low </span></h4>
+          <p class="tekstit2">
+            /site view starts to break when screen width is less than 300px.
+            <br>
+            /home page can have some overlapping issues if screen height is less than 300px, while screen width is more than 1150px.
+          </p>
+        </div>
+
+        <h1> 2/ insinööri board game</h1>
+        <h2>design / planning</h2>
+        <p class="tekstit" id="tekstitContent2">- Board game i designed & planned as a final assignment for "Introduction to game production" course.
+          This project was completed as a group assignment, where my task was to design the board.
+        <br><br>- Starting off, we planned the root idea together, then i started to plan and design the board solo.
+        <br><br>- First i made a draft version with paper and pen, then later i designed the final version with Photoshop.
+        <br><br>- The games idea is to describe route to engineer. Game pawns are moved with dice, but there is a trick.
+        You have to get exact number to move to next "course".
+        <br><br>- So, if you roll 6 you move to 6. Then next round you roll 4 you move to 8. Why? Because of the colored courses.
+        You rolled 1 extra of the 9 where course would end, so you have to move that 1 back. You have to get exact number to get to next course.
+        <br><br>- Game also contains cards for each courses numbers, so when you land on a number you need to complete a task or next round your turn is skipped.
+        The cards also contain some "fun" stuff, but you'll have to play to find out.
+        </p>
+        <button class="show-more-button" onclick="toggleExpand('tekstitContent2')">SHOW MORE</button>
+        
+        <div class="image">
+          <img class="img" src="../img/projects/project2pelilauta.jpg" alt="project 2 image"> 
+        </div>
+        <div class="status2">
+          <h3>PROJECT STATUS: <span class="wip"> COMPLETED</span></h3>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>/ 2024 / Niko Hakala /</p>
+      </div>
+    </footer>
+
+    <script>
+      
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        const menuButton = document.querySelector('.menubutton');
+    
+        sidebar.style.display = 'flex';
+        setTimeout(() => {
+          sidebar.classList.add('sidebar-visible');
+        }, 50);
+        menuButton.style.display = 'none';
+      }
+    
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        const menuButton = document.querySelector('.menubutton');
+    
+        sidebar.classList.remove('sidebar-visible');
+        setTimeout(() => {
+          sidebar.style.display = 'none';
+        }, 300);
+    
+        if (window.innerWidth <= 1150) {
+          menuButton.style.display = 'block';
+        }
+      }
+    
+      function toggleMenuButton() {
+        const sidebar = document.querySelector('.sidebar');
+        const menuButton = document.querySelector('.menubutton');
+    
+        if (sidebar.classList.contains('sidebar-visible')) {
+          hideSidebar();
+        } else {
+          showSidebar();
+        }
+      }
+    
+      function handleResize() {
+        const menuButton = document.querySelector('.menubutton');
+        const sidebar = document.querySelector('.sidebar');
+    
+        if (window.innerWidth > 1150 && sidebar.style.display === 'none') {
+          menuButton.style.display = 'none';
+        } else if (window.innerWidth <= 1150 && sidebar.style.display === 'none') {
+          menuButton.style.display = 'block';
+        }
+    
+        if (window.innerWidth > 1150 && sidebar.style.display === 'flex') {
+          hideSidebar();
+          menuButton.style.display = 'none';
+        }
+      }
+    
+      window.addEventListener('resize', handleResize);
+      handleResize();
+
+      function openImage(img) {
+        img.classList.add('pop');
+        setTimeout(function() {
+          img.classList.remove('pop');
+        }, 1000);
+      }
+
+      if (location.pathname.endsWith('index.html')) {
+      var newPath = location.pathname.replace('index.html', '');
+      window.history.replaceState({}, document.title, newPath);
+      }
+
+      function toggleExpand(id) {
+        var content = document.getElementById(id);
+        var button = content.nextElementSibling;
+
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            button.textContent = "SHOW MORE";
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            button.textContent = "SHOW LESS";
+
+            content.style.transition = 'none';
+            content.offsetHeight;
+            content.style.transition = '';
+        }
+      }
+
+    </script>
+
+  </body>
+
+</html>
