@@ -200,6 +200,8 @@
             button.textContent = "SHOW LESS";
             content.offsetHeight;
             content.style.transition = '';
+
+            content.scrollIntoView({ behavior: "smooth" });
         }
       }
 
