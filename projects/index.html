@@ -199,7 +199,9 @@
             content.style.maxHeight = content.scrollHeight + "px";
             button.textContent = "SHOW LESS";
 
-            window.getComputedStyle(content).getPropertyValue('opacity');
+            setTimeout(() => {
+              window.getComputedStyle(content).getPropertyValue('opacity');
+            }, 1000);
         }
       }
 
