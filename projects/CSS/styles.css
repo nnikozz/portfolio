@@ -265,6 +265,7 @@ nav ul li a.active{
     margin-top: 80px;
     margin-bottom: 50px;
     z-index: 2;
+    background-color: transparent;
 }
 
 .img{
