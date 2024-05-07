@@ -192,16 +192,23 @@
         var content = document.getElementById(id);
         var button = content.nextElementSibling;
 
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-            button.textContent = "SHOW MORE";
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            button.textContent = "SHOW LESS";
-            content.offsetHeight;
-            content.style.transition = '';
+        if (!content.style.maxHeight || content.style.maxHeight === '0px') {
 
-            content.scrollIntoView({ behavior: "smooth" });
+            content.style.maxHeight = content.scrollHeight + 'px';
+            button.textContent = 'SHOW LESS';
+
+            content.offsetHeight;
+
+            content.style.transition = 'max-height 0.3s ease-in-out';
+            
+        } else {
+
+            content.style.maxHeight = '214px';
+            button.textContent = 'SHOW MORE';
+
+            content.offsetHeight;
+
+            content.style.transition = 'max-height 0.3s ease-in-out';
         }
       }
 
