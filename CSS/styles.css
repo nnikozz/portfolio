@@ -36,7 +36,6 @@ body{
     height: 100%;
     background: black;
     background-size: 1000%;
-    background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     animation: fadeIn 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
