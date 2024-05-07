@@ -192,23 +192,21 @@
         var content = document.getElementById(id);
         var button = content.nextElementSibling;
 
-        if (!content.style.maxHeight || content.style.maxHeight === '0px') {
+        if (!content.style.maxHeight || content.style.maxHeight === '214px') {
 
             content.style.maxHeight = content.scrollHeight + 'px';
             button.textContent = 'SHOW LESS';
+            content.style.transition = 'max-height 1s ease';
 
-            content.offsetHeight;
+            setTimeout(() => {
+                content.offsetHeight;
+            }, 1005); 
 
-            content.style.transition = 'max-height 0.3s ease-in-out';
-            
         } else {
 
             content.style.maxHeight = '214px';
             button.textContent = 'SHOW MORE';
-
-            content.offsetHeight;
-
-            content.style.transition = 'max-height 0.3s ease-in-out';
+            content.style.transition = 'max-height 1s ease';
         }
       }
 
